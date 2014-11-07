@@ -121,7 +121,7 @@ exports.update = function(req, res) {
       if(!err && doc) {
         doc.eventName = EventEventName;
         doc.venue = EventVenue;
-		    doc.date = EventDate;
+        doc.date = EventDate;
         doc.save(function(err) {
           if(!err) {
             res.json(200, {message: 'event updated: ' +
